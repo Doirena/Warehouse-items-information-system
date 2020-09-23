@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dovile.data;
+package lt.dovile.warehouseinfosystem.data;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,9 +18,6 @@ public class Item {
     private long code;
     private int quantity;
     private Date expirationDate;
-
-    public Item() {
-    }
 
     public Item(String name, long code, int quantity, Date expirationDate) {
         this.name = name;
