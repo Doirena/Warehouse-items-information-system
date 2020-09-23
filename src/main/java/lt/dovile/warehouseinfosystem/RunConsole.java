@@ -5,6 +5,8 @@
  */
 package lt.dovile.warehouseinfosystem;
 
+import lt.dovile.warehouseinfosystem.consoleaction.RequestResponseConsole;
+
 /**
  *
  * @author Dovile Barkauskaite <barkauskaite.dovile@gmail.com>
@@ -12,6 +14,6 @@ package lt.dovile.warehouseinfosystem;
 public class RunConsole {
     public static void main(String[] args) throws ClassNotFoundException {
 
-        System.out.println("Hello");
+        RequestResponseConsole.chooseAction();
     }
 }
