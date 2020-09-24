@@ -30,16 +30,8 @@ public class Item {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public long getCode() {
         return code;
-    }
-
-    public void setCode(long code) {
-        this.code = code;
     }
 
     public int getQuantity() {
@@ -54,15 +46,10 @@ public class Item {
         return expirationDate;
     }
 
-    public void setExpirationDate(Date expirationDate) {
-        this.expirationDate = expirationDate;
-    }
-
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     @Override
     public String toString() {
         return name + " " + code + " " + quantity + " " + sdf.format(expirationDate);
     }
-
 }
