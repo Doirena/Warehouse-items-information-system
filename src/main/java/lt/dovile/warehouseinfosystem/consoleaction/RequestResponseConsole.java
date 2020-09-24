@@ -42,7 +42,6 @@ public class RequestResponseConsole {
         String choose = inputTxt();
         System.out.println("Choose: " + choose);
         try {
-            String nextAction;
             int chooseNumber = Integer.parseInt(choose);
 
             switch (chooseNumber) {
