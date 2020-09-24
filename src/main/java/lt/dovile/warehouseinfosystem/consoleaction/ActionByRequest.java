@@ -30,7 +30,7 @@ public class ActionByRequest {
 
     /**
      * use {@link lt.dovile.warehouseinfosystem.service.ActionServiceImpl} class which has
-     * getLessItemsByQuantity method and return list when items quantities are
+     * getLessItemsByQuantity method and return list with items when quantities are
      * less than request quantity, this method print result to console
      */
     public void wantingQuqntities() {
