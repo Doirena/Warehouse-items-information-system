@@ -14,6 +14,7 @@ import java.util.List;
  * @author Dovile Barkauskaite <barkauskaite.dovile@gmail.com>
  */
 public interface ActionService {
+    
     /**
      * 
      * @param quantity

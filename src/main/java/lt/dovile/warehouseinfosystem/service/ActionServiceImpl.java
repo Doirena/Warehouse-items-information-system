@@ -5,7 +5,6 @@
  */
 package lt.dovile.warehouseinfosystem.service;
 
-
 import lt.dovile.warehouseinfosystem.data.Item;
 import lt.dovile.warehouseinfosystem.readfile.DataReader;
 import java.text.ParseException;
@@ -23,12 +22,14 @@ public class ActionServiceImpl implements ActionService {
     private static final List<Item> FULL_ITEMS_LIST = new DataReader().readStockFile();
 
     public List<Item> requestItemsList = new ArrayList<>();
-/**
- * 
- * @param requestQuantity
- * @return new Items list when items quantities are less than request quantity. 
- * If request is error or there isn't any items with this request return empty list.
- */
+
+    /**
+     *
+     * @param requestQuantity
+     * @return new Items list when items quantities are less than request
+     * quantity. If request is error or there isn't any items with this request
+     * return empty list.
+     */
     public List<Item> getLessItemsByQuantity(String requestQuantity) {
         int quantity;
         try {
@@ -43,12 +44,14 @@ public class ActionServiceImpl implements ActionService {
         }
         return requestItemsList;
     }
-/**
- * 
- * @param requestDate
- * @return return New Items list which expiration Date are oldest than request date.
- * If request is error or there isn't any items with this request return empty list.
- */
+
+    /**
+     *
+     * @param requestDate
+     * @return return New Items list which expiration Date are oldest than
+     * request date. If request is error or there isn't any items with this
+     * request return empty list.
+     */
     public List<Item> getLessItemsByDate(String requestDate) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date;
