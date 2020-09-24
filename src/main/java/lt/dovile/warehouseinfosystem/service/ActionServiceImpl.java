@@ -48,7 +48,7 @@ public class ActionServiceImpl implements ActionService {
     /**
      *
      * @param requestDate
-     * @return return New Items list which expiration Date are oldest than
+     * @return return New Items list which expiration Date are older than
      * request date. If request is error or there isn't any items with this
      * request return empty list.
      */

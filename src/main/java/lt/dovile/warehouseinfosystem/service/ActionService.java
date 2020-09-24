@@ -25,7 +25,7 @@ public interface ActionService {
     /**
      * 
      * @param date
-     * @return New Items list which expiration Date are oldest than request date
+     * @return New Items list which expiration Dates are older than request date
      */
     List<Item> getLessItemsByDate(String requestDate);
 }

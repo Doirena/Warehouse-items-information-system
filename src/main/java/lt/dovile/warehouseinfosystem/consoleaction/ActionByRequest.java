@@ -29,8 +29,8 @@ public class ActionByRequest {
     }
 
     /**
-     * use {@link lt.dovile.warehouseinfosystem.service.ActionServiceImpl} class which has
-     * getLessItemsByQuantity method and return list with items when quantities are
+     * call {@link lt.dovile.warehouseinfosystem.service.ActionServiceImpl} class with
+     * getLessItemsByQuantity method which return list with items when quantities are
      * less than request quantity, this method print result to console
      */
     public void wantingQuqntities() {
@@ -45,9 +45,9 @@ public class ActionByRequest {
     }
 
     /**
-     * use {@link lt.dovile.warehouseinfosystem.service.ActionServiceImpl} class which has
-     * getLessItemsByDate method and return list when items date are
-     * oldest than request date, this method print result to console
+     * call {@link lt.dovile.warehouseinfosystem.service.ActionServiceImpl} class with
+     * getLessItemsByDate method which return list when items date are
+     * older than request date, this method print result to console
      */
     public void oldestExpirationDate() {
         List<Item> items = new ActionServiceImpl().getLessItemsByDate(getStringTxt("Enter date, example: '2017-01-01'"));
